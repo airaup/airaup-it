@@ -1,0 +1,37 @@
+{
+  "name": "airaup-it",
+  "version": "1.0.0",
+  "description": "Plataforma de IT en Rotaract",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airaup/airaup-it.git"
+  },
+  "keywords": [
+    "rotaract",
+    "airaup"
+  ],
+  "author": "Martin Becerra <mrtnbcrr@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airaup/airaup-it/issues"
+  },
+  "homepage": "https://github.com/airaup/airaup-it#readme",
+  "devDependencies": {
+    "bin-build": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-inject": "^4.3.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7",
+    "vinyl-ftp": "^0.6.1"
+  }
+}

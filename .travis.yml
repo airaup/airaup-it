@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+- node
+
+sudo: false
+cache: npm
+
+before_install:
+- npm install gulp -g
+
+script:
+- npm install
+
+env:
+  global:
+  - secure: KobRipPQNklOGtWZuCKbDyKbS3n2IEVwgTuA4UK0eu2ymZZ2uRliWtBnBzepMBnYzYiyLv6vO5p2MqeuZtTD3RtWDG1Wp8KanjFnqQ5jJiXrT1h8X6xKXBIpeXgIfssAKC2fNnORZyOUFcOM2wNkGXZqXUqb7di+bl838eonC5vbDtQ1sJKNcGbJwRtmZv30F9MrPycbB/aAh29AVMTJn1us4xffrkAXfJ4aKjtgCegm6tp6PNJ/02s8C3q0QU4qyjAej10CdaQLVQ0+Oei7h0bG2K+LV/AA8Txb0KimtTjkete/7XpK1nSsDqd1PVGnas7Y8/xzh+Zi3yerS4GCfVVP8T3gUwBHWXm+bRTtQiKCtr2Gg+baTjrOe74golZ0rEfwiTFQwgBaJWtz1TXB4QyL7H3PW/E3n6PUbuhgbPo2ozu4ekZU0ACUfpomWgNCoAakPnM+aFMEv63NfhsujjPgoLErdfRgpJTB5WZZMUekyCc3+vP4zKZVd/7YzXpnas3dwpe+ZBlQtUIQ2bZVfAsemB5lF95KfKAp9w/c5aID2sQ9JzaV4Q6WaLa7hj1cNT+cRJr7UtQqDn571G4BTXGgkMsMKE+hVLPykt+xwnTssIM45EDRgdasl4nt2PkWFIMFi7+Xj4NbvtMHj/NGJ8HRquhEeeqmDiGcXd9Wf5g=
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: gulp deploy --user $FTP_USER --password $FTP_PASSWORD
+  on:
+    branch: master

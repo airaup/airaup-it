@@ -1,0 +1,98 @@
+*, p, h1, h2, h3, h4 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.icon-svg-md img {
+  height: 100px;
+}
+
+.card-chips {
+  margin-top: 5px;
+}
+.card-chip {
+  height: 32px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  line-height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #dedede;
+  display: inline-block;
+  color: rgba(0,0,0,.87);
+  margin: 2px 0;
+  font-size: 0;
+  white-space: nowrap;
+}
+.card-chips span {
+font-size: 13px;
+vertical-align: middle;
+display: inline-block;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav .brand-logo img {
+  height: 50px;
+  margin: 10px 0 0 0;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .header {
+    height: 120px;
+  }
+
+  nav .brand-logo img {
+    height: 40px;
+  }
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
