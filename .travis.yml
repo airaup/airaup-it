@@ -14,6 +14,6 @@ env:
 deploy:
   provider: script
   skip_cleanup: true
-  script: echo "user $FTP_USER password $FTP_PASSWORD"
+  script: gulp deploy --user $FTP_USER --password $FTP_PASSWORD
   on:
     branch: master
